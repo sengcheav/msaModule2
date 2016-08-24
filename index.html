@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Searchify</title>
+        <!--Boostrap's CSS-->
+        <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <!--Custom CSS
+        <link rel="stylesheet" type="text/css" href="./css/style.css">-->
+    </head>
+    <body>
+        <div class="container" id="page-container">
+            <h1 id="app-name">
+                <span class="glyphicon glyphicon-search"></span> searchify news
+            </h1>
+            <!-- NB: glyphicon halflings are generally not free, but the developer made them free in bootstrap -->
+
+            <h2 id="page-header">
+                Get news depend on what you search
+            </h2>
+            <form>
+                    <div class="form-group">
+                        
+                        <input type="text" class="form-control" id="searchbox">
+                    </div>
+                    
+                    <button type="submit" class="btn btn-default" id= "searchbutton">search</button>
+            </form>
+
+            <div id ="display1" overflow = "scroll">
+                <p> hello <p>
+                    <a href ="facebook.com">
+                       
+                        <p> helloas sdhfwkeolds </p>    
+                    </a>
+
+                       
+
+            </div>        
+
+        </div>
+        <!-- 
+            NB: You generally do not want to publically expose the server structure (eg. ./node_modules/...)
+            will sort that in later bootcamps with task-runners and the like.
+            For now this is just a demonstration.
+
+            Alternatively can use CDNs for bootstrap/jquery
+        -->
+    
+        <!--jQuery Script-->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <!--Custom Script-->
+        <script src="./js/main.js"></script>
+
+
+    </body>
+</html>
