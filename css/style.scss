@@ -1,0 +1,14 @@
+$font:    Helvetica, sans-serif;
+$color: black ; 
+
+body{
+    font: $font ; 
+    color :$color ; 
+}
+
+p{
+    font:$font;
+    color:$color;
+    text-decoration: none ; 
+}
+

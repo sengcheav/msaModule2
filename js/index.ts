@@ -69,7 +69,7 @@ $('#searchbox').bind('input propertychange', function() {
 
 });
 
-function search() {
+function search(): void {
     var d = searchbox.val();
      alert("searching");
      var params = {
