@@ -2,6 +2,7 @@ var pagecontainer = $("#page-container");
 var searchbutton = $("#searchbutton");
 var searchbox = $("#searchbox");
 
+$.mobile.loading().hide();
 
 searchbutton.on("click", function () {
    
