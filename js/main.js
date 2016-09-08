@@ -2,7 +2,7 @@ var pagecontainer = $("#page-container");
 var searchbutton = $("#searchbutton");
 var searchbox = $("#searchbox");
 
-$.mobile.loading().hide();
+$.mobile.loading().hide(); // to prevent loading message at the end of the page http://stackoverflow.com/questions/10397940/jquery-mobile-loading-message
 
 searchbutton.on("click", function () {
    

@@ -1,10 +1,20 @@
 body {
   font: Helvetica, sans-serif;
-  color: black; }
+  color: black;
+  background: grey; }
 
 p {
   font: Helvetica, sans-serif;
   color: black;
   text-decoration: none; }
+
+button {
+  border: none;
+  background: none; }
+
+#rec {
+  margin-top: 5px;
+  border-bottom: solid #b3b3b3;
+  border-width: 1px; }
 
 /*# sourceMappingURL=style.css.map */

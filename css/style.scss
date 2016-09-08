@@ -1,9 +1,11 @@
 $font:    Helvetica, sans-serif;
 $color: black ; 
+$lightgrey : lighten(black, 70%);
 
 body{
     font: $font ; 
     color :$color ; 
+    background :grey ; 
 }
 
 p{
@@ -12,3 +14,13 @@ p{
     text-decoration: none ; 
 }
 
+button {
+    border: none ;
+    background: none ; 
+}
+
+#rec {
+    margin-top : 5px ; 
+    border-bottom: solid $lightgrey ; 
+    border-width: 1px;
+}
