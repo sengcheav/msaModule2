@@ -9,7 +9,8 @@ var enter = false ;
 
 $.mobile.loading().hide();// to prevent loading message at the end of the page http://stackoverflow.com/questions/10397940/jquery-mobile-loading-message
 
-searchbutton.on("click", function () {   
+searchbutton.on("click", function (e) {
+    e.preventDefault();   //prevent flickering after click
     alert("You clicked the button with search on " + searchbox.val());     
     search(false , "no");
     enter= false ;
