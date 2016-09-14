@@ -92,7 +92,7 @@ function search(category, topic) {
     alert("searching");
     var params, urllink;
     if (category) {
-        alert("topic");
+        // alert("topic");
         params = {
             "q": topic,
             "count": "10",
@@ -103,7 +103,7 @@ function search(category, topic) {
         urllink = "https://api.cognitive.microsoft.com/bing/v5.0/news/?" + $.param(params);
     }
     else {
-        alert("no category");
+        // alert("no category");
         params = {
             "q": d,
             "count": "10",
@@ -133,7 +133,7 @@ function search(category, topic) {
             display.removeChild(fc);
             fc = display.firstChild;
         }
-        alert("success");
+        // alert("success");
         // console.log(data);
         var displayData = "";
         var array = data.value;
