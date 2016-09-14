@@ -89,7 +89,7 @@ $(document).ready(function(){
 */
 function search(category, topic) {
     var d = searchbox.val();
-    alert("searching");
+    //alert("searching");
     var params, urllink;
     if (category) {
         // alert("topic");

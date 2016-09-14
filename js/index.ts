@@ -98,7 +98,7 @@ $(document).ready(function(){
 */
 function search(category: Boolean , topic : String): void {
     var d = searchbox.val();
-     alert("searching");
+     //alert("searching");
      var params, urllink ;
      if(category){
        // alert("topic");
