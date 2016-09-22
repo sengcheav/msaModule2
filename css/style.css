@@ -8,6 +8,10 @@ p {
   color: black;
   text-decoration: none; }
 
+.toptab {
+  border: solid white;
+  border-width: 1px; }
+
 button {
   border: none;
   background: none; }

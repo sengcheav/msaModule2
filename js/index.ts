@@ -43,7 +43,7 @@ function handle(e) {
     }
 }
 
-/*
+/*  comment out due to out of quota request 
 $(document).ready(function(){
     $('#searchbox').bind('input propertychange', function() {
         if(enter ){

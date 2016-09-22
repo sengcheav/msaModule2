@@ -5,16 +5,36 @@
         
         <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+        <!-- 
+        To collect end-user usage analytics about your application, 
+        insert the following script into each page you want to track.
+        Place this code immediately before the closing </head> tag,
+        and before any other scripts. Your first data will appear 
+        automatically in just a few seconds.
+        -->
+        <script type="text/javascript">
+        var appInsights=window.appInsights||function(config){
+            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;s.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(s);try{t.cookie=u.cookie}catch(h){}for(t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Dependency"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
+            }({
+                instrumentationKey:"8c63d139-2b92-4844-a5a0-a46b708871b5"
+            });
+            
+            window.appInsights=appInsights;
+            appInsights.trackPageView();
+        </script>
     </head>
     <body>
         <div class="container" id="page-container">
-            <h1 id="app-name">
-                <span class="glyphicon glyphicon-search"></span> searchify news
-            </h1>
-           
-            <h2 id="page-header">
-                Get news depend on what you search
-            </h2>
+            <div class="toptab">
+                <h1 id="app-name">
+                    <span class="glyphicon glyphicon-search"></span> searchify news
+                </h1>
+            
+                <h2 id="page-header">
+                    Get news depend on what you search
+                </h2>
+            </div>    
             <div class="btn-group btn-group-lg">
                 <button type="button" id = "news">News</button>
                 <button type="button" id = "sport">Sport</button>
@@ -54,23 +74,7 @@
       <script src="./js/index.js"></script>
 
 
-      <!-- 
-        To collect end-user usage analytics about your application, 
-        insert the following script into each page you want to track.
-        Place this code immediately before the closing </head> tag,
-        and before any other scripts. Your first data will appear 
-        automatically in just a few seconds.
-        -->
-        <script type="text/javascript">
-        var appInsights=window.appInsights||function(config){
-            function r(config){t[config]=function(){var i=arguments;t.queue.push(function(){t[config].apply(t,i)})}}var t={config:config},u=document,e=window,o="script",s=u.createElement(o),i,f;s.src=config.url||"https://az416426.vo.msecnd.net/scripts/a/ai.0.js";u.getElementsByTagName(o)[0].parentNode.appendChild(s);try{t.cookie=u.cookie}catch(h){}for(t.queue=[],i=["Event","Exception","Metric","PageView","Trace","Dependency"];i.length;)r("track"+i.pop());return r("setAuthenticatedUserContext"),r("clearAuthenticatedUserContext"),config.disableExceptionTracking||(i="onerror",r("_"+i),f=e[i],e[i]=function(config,r,u,e,o){var s=f&&f(config,r,u,e,o);return s!==!0&&t["_"+i](config,r,u,e,o),s}),t
-            }({
-                instrumentationKey:"8c63d139-2b92-4844-a5a0-a46b708871b5"
-            });
-            
-            window.appInsights=appInsights;
-            appInsights.trackPageView();
-        </script>
+      
 
 
     </body>
