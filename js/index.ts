@@ -103,13 +103,13 @@ function search(category: Boolean , topic : String): void {
      if(category){
        // alert("topic");
         params = {
-            "q": topic,
+            
                 "count": "10",
                 "offset": "0",
                 "mkt": "en-nz",
                 "safeSearch": "Moderate",
         };
-        urllink = "https://api.cognitive.microsoft.com/bing/v5.0/news/?"+ $.param(params)  ;  
+        urllink = "https://api.cognitive.microsoft.com/bing/v5.0/news?category="+topic+"&"+ $.param(params)  ;  
      }
      else {
         // alert("no category");
@@ -192,7 +192,7 @@ function search(category: Boolean , topic : String): void {
            }
            i++ ; 
        }); 
-       console.log(displayData);
+       console.lop(displayData);
        $('#display1').append(displayData);
 
         })

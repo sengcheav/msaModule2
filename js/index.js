@@ -34,7 +34,7 @@ function handle(e) {
         enter = false;
     }
 }
-/*
+/*  comment out due to out of quota request
 $(document).ready(function(){
     $('#searchbox').bind('input propertychange', function() {
         if(enter ){
@@ -94,13 +94,12 @@ function search(category, topic) {
     if (category) {
         // alert("topic");
         params = {
-            "q": topic,
             "count": "10",
             "offset": "0",
             "mkt": "en-nz",
             "safeSearch": "Moderate",
         };
-        urllink = "https://api.cognitive.microsoft.com/bing/v5.0/news/?" + $.param(params);
+        urllink = "https://api.cognitive.microsoft.com/bing/v5.0/news?category=" + topic + "&" + $.param(params);
     }
     else {
         // alert("no category");
@@ -178,7 +177,7 @@ function search(category, topic) {
             }
             i++;
         });
-        console.log(displayData);
+        console.lop(displayData);
         $('#display1').append(displayData);
     })
         .fail(function (error) {
