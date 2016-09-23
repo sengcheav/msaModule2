@@ -18,11 +18,11 @@ news.on("click", function () {
     enter = false;
 });
 sport.on("click", function () {
-    search(true, "sport");
+    search(true, "Sports");
     enter = false;
 });
 entertainment.on("click", function () {
-    search(true, "Entertainment");
+    search(true, "Entertainments");
     enter = false;
 });
 function handle(e) {
