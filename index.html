@@ -44,7 +44,7 @@
 
             <form>
                 <div class="form-group" >                        
-                    <input type="text" class="form-control" id="searchbox" list="suggestionList">
+                    <input type="text" class="form-control col-md-6" id="searchbox" list="suggestionList"></input>
                     <datalist id="suggestionList">
                         <option value="new" />
                         <option value="news" />
@@ -57,8 +57,9 @@
                         <option value="noun" />
                         <option value="next" />
                     </datalist>
+                    <button type="submit" class="btn btn-default col-md-2" id= "searchbutton">search</button>
                 </div>                    
-                <button type="submit" class="btn btn-default" id= "searchbutton">search</button>
+                
             </form>
             <p id = 'typein'></p>
             <div id ="display1" style="overflow:scroll; height:400px;"></div>        
