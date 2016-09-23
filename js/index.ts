@@ -192,7 +192,7 @@ function search(category: Boolean , topic : String): void {
            }
            i++ ; 
        }); 
-       console.lop(displayData);
+       console.loc(displayData);
        $('#display1').append(displayData);
 
         })
