@@ -101,7 +101,7 @@ function search(category: Boolean , topic : String): void {
      //alert("searching");
      var params, urllink ;
      if(category){
-       // alert("topic");
+       // alert("topic");//
         params = {
             
                 "count": "10",

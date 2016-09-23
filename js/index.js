@@ -92,7 +92,7 @@ function search(category, topic) {
     //alert("searching");
     var params, urllink;
     if (category) {
-        // alert("topic");
+        // alert("topic");//
         params = {
             "count": "10",
             "offset": "0",
