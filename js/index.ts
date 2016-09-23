@@ -18,7 +18,7 @@ searchbutton.on("click", function (e) {
 
 news.on("click", function () {   
      
-    search(true , "news");
+    search(true , "World");
     enter= false ;
 });
 
@@ -29,7 +29,7 @@ sport.on("click", function () {
 });
 entertainment.on("click", function () {   
    
-    search(true , "Entertainments");
+    search(true , "Entertainment");
     enter= false ;
 });
 
