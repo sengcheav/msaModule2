@@ -177,7 +177,7 @@ function search(category, topic) {
             }
             i++;
         });
-        console.loc(displayData);
+        console.log(displayData);
         $('#display1').append(displayData);
     })
         .fail(function (error) {
