@@ -99,7 +99,7 @@ function search(category, topic) {
             "mkt": "en-nz",
             "safeSearch": "Moderate",
         };
-        urllink = "https://api.cognitive.microsoft.com/bing/v5.0/news?category=politics&count=10&offset=70&mkt=en-us&safeSearch=Moderate";
+        urllink = "https://api.cognitive.microsoft.com/bing/v5.0/news?category=" + topic + "&count=10&offset=70&mkt=en-us&safeSearch=Moderate";
     }
     else {
         // alert("no category");
